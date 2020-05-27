@@ -117,8 +117,8 @@ class EmailClient:
 
 	def read(self, filter=['ALL']):
 		# connect server
-		server = IMAPClient(imap_server, use_uid=True)
-		server.login(email_address, email_pwd)
+		server = IMAPClient(self.imap_server, use_uid=True)
+		server.login(self.email_address, self.email_pwd)
 		select_info = server.select_folder('INBOX')
 		# retrieve the messages and puts them in a collection [4][5]
 		messages = server.search(filter)
