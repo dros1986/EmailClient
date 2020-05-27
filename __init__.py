@@ -1,1 +1,1 @@
-from .EmailClient import EmailClient
+from EmailClient.EmailClient import EmailClient, EmailMessage
