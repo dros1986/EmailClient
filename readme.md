@@ -1,3 +1,8 @@
+## Installation via pip
+```bash
+pip install git+https://github.com/dros1986/EmailClient.git
+```
+
 ## Usage
 This library is really easy to use:
 
@@ -32,11 +37,6 @@ gmail.send('recipient@gmail.com', 'Nice subject', 'Nice message', \
 	attachments=['/path/to/pdf.pdf', '/path/to/image.png'])
 ```
 
-## Installation via pip
-```bash
-pip install git+https://github.com/dros1986/EmailClient.git
-```
-
 ## Include it in your git project as submodule
 To include EmailClient in your project:
 ```bash
@@ -46,3 +46,7 @@ Remember when cloning your project in another place to use --recursive flag:
 ```bash
 git clone --recursive <your_git_repo>
 ```
+
+## Note
+In order to use GMail, you need to enable less secure apps [at this link.](
+https://myaccount.google.com/lesssecureapps)
