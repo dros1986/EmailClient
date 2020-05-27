@@ -20,7 +20,7 @@ smtp_port=587
 gmail = EmailClient(email_address, email_pwd, imap_server, imap_port, smtp_server, smtp_port)
 
 # get all messages
-messages = gmail.read()
+messages = gmail.read() # if you need only unread, set filter=['UNSEEN']
 
 # for each message
 for msg in messages:
