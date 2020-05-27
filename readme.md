@@ -2,6 +2,8 @@
 This library is really easy to use:
 
 ```python
+from EmailClient import EmailClient
+
 email_address = "your_email@gmail.com"
 email_pwd = "your_password"
 imap_server = "imap.gmail.com"
@@ -30,17 +32,17 @@ gmail.send('recipient@gmail.com', 'Nice subject', 'Nice message', \
 	attachments=['/path/to/pdf.pdf', '/path/to/image.png'])
 ```
 
-## Installation
+## Installation via pip
 ```bash
-pip install <git_repo>
+pip install git+https://github.com/dros1986/EmailClient.git
 ```
 
 ## Include it in your git project as submodule
 To include EmailClient in your project:
 ```bash
-git submodule add <git_repo>
+git submodule add https://github.com/dros1986/EmailClient.git
 ```
-Remember when you clone your project in another place to clone with:
+Remember when cloning your project in another place to use --recursive flag:
 ```bash
-git clone -- <your_git_repo>
+git clone --recursive <your_git_repo>
 ```
