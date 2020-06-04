@@ -65,7 +65,7 @@ class EmailMessage:
 
 	def attachments(self, save_dir):
 		# get raw content
-		raw = email.message_from_bytes(self.data[b'RFC822'])
+		msg = email.message_from_bytes(self.data[b'RFC822'])
 		# https://github.com/LukeARG/IMAPClient-and-Attachments/blob/master/IMAPCwAttchmnts.py
 		# create output dir
 		os.makedirs(save_dir, exist_ok=True)
