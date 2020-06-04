@@ -36,7 +36,7 @@ class EmailMessage:
 		senders = envelope.from_
 		res = []
 		for sender in senders:
-			res.append([sender.mailbox + sender.host, sender.name])
+			res.append([(sender.mailbox + b'@' + sender.host).decode("utf-8"), sender.name.decode("utf-8")])
 		return res
 
 	def reply_to(self):
@@ -44,7 +44,7 @@ class EmailMessage:
 		replytos = reply_to.from_
 		res = []
 		for replyto in replytos:
-			res.append([replyto.mailbox + replyto.host, replyto.name])
+			res.append([(replyto.mailbox + b'@' + replyto.host).decode("utf-8"), replyto.name.decode("utf-8")])
 		return res
 
 	def message(self):
