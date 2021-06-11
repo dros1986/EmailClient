@@ -34,6 +34,7 @@ for msg in messages:
 
 # send a message with attachments
 gmail.send('recipient@gmail.com', 'Nice subject', 'Nice message', \
+	cc='xxx@domain.it',
 	attachments=['/path/to/pdf.pdf', '/path/to/image.png'])
 ```
 
