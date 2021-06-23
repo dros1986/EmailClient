@@ -163,7 +163,7 @@ class EmailClient:
 		return msg
 
 
-	def send(self, to, subject, text, attachments=None):
+	def send(self, to, subject, text, cc=None, attachments=None):
 		# log into SMTP server
 		server = smtplib.SMTP(host=self.smtp_server, port=self.smtp_port)
 		server.starttls()
@@ -171,6 +171,8 @@ class EmailClient:
 		# create message
 		message = MIMEMultipart()
 		message['to'] = to
+		if cc is not None:
+			message['cc'] = cc
 		message['from'] = self.email_address
 		message['subject'] = subject
 		message.attach(MIMEText(text))
