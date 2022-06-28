@@ -7,7 +7,7 @@ pip install git+https://github.com/dros1986/EmailClient.git
 This library is really easy to use:
 
 ```python
-from EmailClient import EmailClient
+from supermail import EmailClient
 
 email_address = "your_email@gmail.com"
 email_pwd = "your_password"
