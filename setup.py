@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
 	name='supermail',
-	version='1.0',
+	version='1.1',
 	author="Flavio Piccoli",
 	author_email="dros1986@gmail.com",
 	description="An email client for reading and sending emails.",
