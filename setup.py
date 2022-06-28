@@ -7,7 +7,7 @@ long_description = (this_directory / "readme.md").read_text()
 
 setuptools.setup(
 	name='supermail',
-	version='1.2',
+	version='1.3',
 	author="Flavio Piccoli",
 	author_email="dros1986@gmail.com",
 	description="An email client for reading and sending emails.",
