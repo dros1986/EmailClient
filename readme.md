@@ -49,5 +49,9 @@ git clone --recursive <your_git_repo>
 ```
 
 ## Note
-In order to use GMail, you need to enable less secure apps [at this link.](
-https://myaccount.google.com/lesssecureapps)
+In order to use GMail, you need to log into [your security page](https://myaccount.google.com/security) and:
+1. enable two-step verification
+2. right below, it will appear an option called **App Password**. Create a new one that you will be able to use with EmailClient.
+
+
+[Less secure apps.](https://myaccount.google.com/lesssecureapps) no longer works.
