@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-	name='EmailClient',
+	name='supermail',
 	version='1.0',
 	author="Flavio Piccoli",
 	author_email="dros1986@gmail.com",
