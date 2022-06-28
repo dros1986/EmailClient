@@ -38,16 +38,6 @@ gmail.send('recipient@gmail.com', 'Nice subject', 'Nice message', \
 	attachments=['/path/to/pdf.pdf', '/path/to/image.png'])
 ```
 
-## Include it in your git project as submodule
-To include EmailClient in your project:
-```bash
-git submodule add https://github.com/dros1986/EmailClient.git
-```
-Remember when cloning your project in another place to use --recursive flag:
-```bash
-git clone --recursive <your_git_repo>
-```
-
 ## Note
 In order to use GMail, you need to log into [your security page](https://myaccount.google.com/security) and:
 1. enable two-step verification
