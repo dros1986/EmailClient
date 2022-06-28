@@ -28,8 +28,11 @@ class EmailMessage:
 
 
 	def subject(self):
-		envelope = self.data[b'ENVELOPE']
-		return envelope.subject.decode()
+		try:
+			envelope = self.data[b'ENVELOPE']
+			return envelope.subject.decode()
+		except:
+			return ''
 
 	def sender(self):
 		envelope = self.data[b'ENVELOPE']
